@@ -1,13 +1,159 @@
-
 *{
 	margin: 0px;
 	padding: 0px;
 }
 
-h1#semantico{
-	display: none;/*Oculta o título*/
+/* ----------- LOGO ------------ */
+
+header#menu{
+	/*border: 1px solid red;*/
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;	
+	background-color: #FFE1D2; 
+}	
+
+header#menu img{
+	max-width: 100%;
+	width: 250px;
 }
 
+/* ----------- MENU ------------ */
+
+header#menu #nave{
+	/* border: 1px solid red; */
+	background: #F2BE7E; 
+}
+
+header#menu #nave ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+header#menu #nave ul li {
+	padding: 10px;
+	list-style: none;
+}
+header#menu #nave ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+}
+/* ----------- CAPA ------------ */
+
+figure#capa {
+	position: relative;
+}
+
+figure#capa figcaption{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	bottom: 0;
+	width: 80%;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+figure#capa figcaption h3{
+	text-align: left;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+	color: white;
+}
+figure#capa figcaption p{
+	font-size: 15px;
+	font-family: sans-serif;
+	color:  black;
+	font-family: 'Akaya Telivigala', cursive;
+}
+
+figure#capa img{
+	width: 100%;
+}
+
+/* ----------- SEÇÃO TERAPIA ------------ */
+section#terapia h1{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #F2BE7E;
+}
+
+section#terapia{
+	background-color:#FFE1D2;
+	padding-top: 20px;	
+	text-align: center;
+/* 	border: 1px solid red; */	
+}
+
+section#terapia img{
+	width: 250px;
+	height: 250px;
+}
+
+section#terapia figcaption p{
+	text-align: left;
+	padding: 5%;
+}
+
+/* --------- SEÇÃO SERVIÇOS ----------- */
+
+section#servicos{
+	/* border: 1px solid red; */
+}
+
+section#servicos div{
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	font-size: 12pt; 
+	font-family: cursive;
+}
+
+section#servicos h3{
+	color:#F2BE7E; 
+	padding: 10px;
+}
+
+section#servicos button{
+	color:black; 
+	background-color:#F2BE7E;
+	border-style: none;
+	padding: 10px;
+	border-radius: 15px;
+	font-family: cursive;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+footer{
+	background-color:#F2BE7E; 
+	text-align: center;
+	padding: 15px;
+}
+
+footer p{
+	padding: 10px;		
+}
+
+/*------ Responsividade -------------*/
+
+@media screen and(min-width:768){
+	
+}
+
+
+
+
+
+/*
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
 h1{
 	font-family: sans-serif;
 	text-align: center;
@@ -18,14 +164,15 @@ h1{
 
 }
 
-/*--------------- Barra Inicial ---------------------*/
+/*--------------- Barra Inicial -----------
 div#barra{
 
-	background-color: #FFE1D2; /*Rosa Bebê*/
+	background-color: #FFE1D2; /*Rosa B
+	margin: 0 auto;;
 }
 
 div{
-	/*border: 1px solid blue;*/
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -35,11 +182,11 @@ div{
 div.caixa-diferente{
 	padding-top: 50px;
 }
-/*-------------------Menu--------------------*/
+/*-------------------Menu---------
 
 nav#menu{
 	height: 80px;
-	background-color: #F2BE7E; /*Laranja Claro*/
+	background-color: #F2BE7E; /*Laran
 
 }
 
@@ -62,12 +209,11 @@ nav#menu ul li a {
 	font-size: 15pt;
 }
 
-/*-------------------Capa--------------------*/
 
 figure#capa{
 	width: auto;
 	height: 400px;
-	/*border: 1px solid red;*/
+	/*border: 1
 	box-shadow: 1px 1px 4px;
 	position: relative;
 }
@@ -82,7 +228,7 @@ figure#capa figcaption{
 	opacity: 0;
 	position: absolute;
 	top: 0;
-	background-color: rgba(0, 0, 0, 0.1);/*dar a cor de fundo*/
+	background-color: rgba(0, 0, 0, 0.1);/*dar a co
 	width: 100%;
 	height: 100%;
 	padding: 10px;
@@ -114,11 +260,9 @@ figure#capa:hover figcaption{
 
 }
 
-/*-----------------Seção - terapia --------------------*/
-
 section#terapia{
 	
-	background-color:#FFE1D2;/*rosa*/
+	background-color:#FFE1D2;/*ros
 	max-height: 500px;
 	margin: auto;
 	padding-top: 40px;
@@ -144,7 +288,7 @@ section#terapia figcaption{
 	height: 150px;
 	font-family: cursive;
 	font-size: 12pt;
-	overflow:hidden;/*esconder o texto*/
+	overflow:hidden;/*escond
 }
 
 section#terapia figcaption p{
@@ -154,13 +298,12 @@ section#terapia figcaption p{
 }
 
 section#terapia figure img:hover{
-	border: 1px solid #CE6F83;/*rosa escuro*/
+	border: 1px solid #CE6F83;
 	transform: scale(1.2);
 	
 }
 
 
-/*-----------------Seção - serviços --------------------*/
 
 section#servicos{
 	display: flex;
@@ -189,7 +332,7 @@ section#servicos div#texto{
 }
 
 section#servicos div#texto h3{
-	color:#F2BE7E; /*laranja*/
+	color:#F2BE7E; 
 	padding: 10px;
 }
 
@@ -217,7 +360,7 @@ section#servicos div#texto button:hover{
 	cursor: pointer;
 }
 
-/*----------------- Footer --------------------*/
+
 footer{
 	
 
@@ -233,3 +376,11 @@ footer p{
 	
 }
 
+
+
+
+
+
+
+
+*/
