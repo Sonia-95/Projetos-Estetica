@@ -2,11 +2,12 @@
 	margin: 0px;
 	padding: 0px;
 }
+ 
 
 /* ----------- LOGO ------------ */
 
 header#menu{
-	/*border: 1px solid red;*/
+	border: 1px solid red;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;	
@@ -101,10 +102,6 @@ section#terapia figcaption p{
 
 /* --------- SEÇÃO SERVIÇOS ----------- */
 
-section#servicos{
-	/* border: 1px solid red; */
-}
-
 section#servicos div{
 	margin: auto;
 	text-align: center;
@@ -140,7 +137,20 @@ footer p{
 
 /*------ Responsividade -------------*/
 
-@media screen and(min-width:768){
+@media screen and (max-width: 480px) {
+
+	.visibilidade{
+		display: none;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	header#menu{
+		width: 100%;
+		background-color: #FFE1D2; 
+		
+	}	
+	
 	
 }
 
