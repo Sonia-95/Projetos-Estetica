@@ -1,32 +1,30 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
- 
 
 /* ----------- LOGO ------------ */
 
-header#menu{
-	border: 1px solid red;
+header#menu {
 	width: 100%;
 	margin: 0 auto;
-	text-align: center;	
-	background-color: #FFE1D2; 
-}	
+	text-align: center;
+	background-color: #FFE1D2;
+}
 
-header#menu img{
+header#menu img {
 	max-width: 100%;
 	width: 250px;
 }
 
 /* ----------- MENU ------------ */
 
-header#menu #nave{
+header#menu #nave {
 	/* border: 1px solid red; */
-	background: #F2BE7E; 
+	background: #F2BE7E;
 }
 
-header#menu #nave ul{
+header#menu #nave ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -37,18 +35,27 @@ header#menu #nave ul li {
 	padding: 10px;
 	list-style: none;
 }
+
 header#menu #nave ul li a {
 	text-decoration: none;
 	color: white;
 	font-size: 1em;
 }
+
+
+header#menu #nave ul li a:hover {
+	text-decoration:underline;
+	text-decoration-color: #CE6F83;
+	
+}
+
 /* ----------- CAPA ------------ */
 
 figure#capa {
 	position: relative;
 }
 
-figure#capa figcaption{
+figure#capa figcaption {
 	opacity: 1;
 	background-color: rgba(0, 0, 0, 0.1);
 	position: absolute;
@@ -58,66 +65,67 @@ figure#capa figcaption{
 	margin: 0 auto;
 }
 
-figure#capa figcaption h3{
+figure#capa figcaption h3 {
 	text-align: left;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-family: "Arial", sans-serif;
 	color: white;
 }
-figure#capa figcaption p{
+
+figure#capa figcaption p {
 	font-size: 15px;
 	font-family: sans-serif;
-	color:  black;
+	color: black;
 	font-family: 'Akaya Telivigala', cursive;
 }
 
-figure#capa img{
+figure#capa img {
 	width: 100%;
 }
 
 /* ----------- SEÇÃO TERAPIA ------------ */
-section#terapia h1{
+
+section#terapia h1 {
 	text-align: center;
 	margin-bottom: 20px;
 	color: #F2BE7E;
 }
 
-section#terapia{
-	background-color:#FFE1D2;
-	padding-top: 20px;	
+section#terapia {
+	background-color: #FFE1D2;
+	padding-top: 20px;
 	text-align: center;
-/* 	border: 1px solid red; */	
 }
 
-section#terapia img{
+section#terapia img {
 	width: 250px;
 	height: 250px;
 }
 
-section#terapia figcaption p{
+section#terapia figcaption p {
 	text-align: left;
 	padding: 5%;
 }
 
 /* --------- SEÇÃO SERVIÇOS ----------- */
 
-section#servicos div{
+section#servicos div {
 	margin: auto;
 	text-align: center;
 	width: 80%;
-	font-size: 12pt; 
+	font-size: 12pt;
 	font-family: cursive;
 }
 
-section#servicos h3{
-	color:#F2BE7E; 
+section#servicos h3 {
+	color: #F2BE7E;
 	padding: 10px;
 }
 
-section#servicos button{
-	color:black; 
-	background-color:#F2BE7E;
+section#servicos button {
+	color: black;
+	background-color: #F2BE7E;
 	border-style: none;
 	padding: 10px;
 	border-radius: 15px;
@@ -125,272 +133,195 @@ section#servicos button{
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-footer{
-	background-color:#F2BE7E; 
+
+/* --------- RODAPÉ ----------- */
+
+footer#contato {
+	background-color: #F2BE7E;
 	text-align: center;
 	padding: 15px;
 }
 
-footer p{
-	padding: 10px;		
+footer#contato p {
+	padding: 10px;
 }
 
-/*------ Responsividade -------------*/
+/*--------- RESPONSIVIDADE -------------*/
 
 @media screen and (max-width: 480px) {
 
-	.visibilidade{
+	.visibilidade {
 		display: none;
 	}
-	
 }
-@media screen and (max-width: 768px) {
-	header#menu{
+
+/* -------------------------------------*/
+
+@media screen and (min-width: 481px) {
+	div.horizontal {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		text-align: center;
+	}
+
+	div.horizontal div.visibilidade {
+		margin-top: 100px;
+	}
+
+	nav#nave {
+		font-size: 1.3em;
+	}
+
+	/*-------------------------------------- ------- Imagem da Capa  */
+
+	figure#capa {
+		width: 100vw;
+		height: 80vh;
+
+	}
+
+	figure#capa img {
 		width: 100%;
-		background-color: #FFE1D2; 
-		
-	}	
+		height: 100%;
+	}
+
+	figure#capa figcaption {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.1);
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		transition: opacity 1s;
+	}
+
+	figure#capa figcaption h3 {
+		text-align: left;
+		margin-top: 30px;
+		font-size: 20pt;
+		text-transform: uppercase;
+		font-family: "Arial", sans-serif;
+		color: white;
+	}
+
+	figure#capa figcaption p {
+		text-align: left;
+		margin-top: 40px;
+		font-size: 18pt;
+		font-family: sans-serif;
+		color: black;
+		font-family: 'Akaya Telivigala', cursive;
+	}
+
+	figure#capa:hover figcaption {
+		opacity: 1;
+
+	}
+
+	/* -------------------------------------- ------- Seção Terapia  */
+
+	section#terapia h1 {
+		text-align: center;
+		margin-bottom: 40px;
+		color: #F2BE7E;
+	}
+
+	section#terapia {
+		background-color: #FFE1D2;
+		/* 	text-align: center; */
+	}
+
+	section#terapia div {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	section#terapia figcaption {
+		width: 300px;
+		height: 200px;
+		font-family: cursive;
+		font-size: 1em;
+		overflow: hidden;
+		/* esconde o texto vazado */
+		/* border: 2px dashed blue; */
+	}
+
+	section#terapia figcaption p {
+		text-align: justify;
+		margin: 10px 20px 10px 20px;
+		/*border: 2px dashed red; */
+	}
+
+	section#terapia figure img:hover {
+		border: 1px solid #CE6F83;
+		transform: scale(1.2);
+		margin-bottom: 30px;
+		/*margem p/ não cobrir o nome*/
+	}
+
+	/*-------------------------------------- ------- Seção Serviços */
+	section#servicos {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: no-wrap;
+		justify-content: center;
+		margin: 30px;
+	}
+
+	section#servicos div {
+		margin: 60px;
+		width: 400px;
+		font-family: cursive;
+		font-size: 1.5em;
+
+	}
+
+	section#servicos div img {
+		width: 100%;
+		height: 60vh;
+	}
 	
-	
-}
+	section#servicos div button:hover{
+		text-decoration: underline;
+		text-decoration-color: #CE6F83;
+		cursor: pointer;
+	}
+
+	/*-------------------------------------- ------- Rodapé */
+	footer#contato{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 50px;
+	}
+
+	footer#contato p{
+		font-size: 1em;
+	}
+
+	/* -------------------------------------- ------- Ajeitando a imagem : Quem Somos*/
+
+	@media screen and (min-width: 481px)and (max-width:768px) {
+
+		section#servicos {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			font-size: 0.8em;
+			padding: 2vw;
+		}
+
+		section#servicos div {
+			margin: 0 auto;
+		}
 
 
-
-
-
-/*
-
-*{
-	margin: 0px;
-	padding: 0px;
-}
-h1{
-	font-family: sans-serif;
-	text-align: center;
-	color: #F2BE7E;
-	text-transform: uppercase;
-	font-size: 14pt;
-	margin: 10px;
-
-}
-
-/*--------------- Barra Inicial -----------
-div#barra{
-
-	background-color: #FFE1D2; /*Rosa B
-	margin: 0 auto;;
-}
-
-div{
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	text-align: center;
-}
-
-div.caixa-diferente{
-	padding-top: 50px;
-}
-/*-------------------Menu---------
-
-nav#menu{
-	height: 80px;
-	background-color: #F2BE7E; /*Laran
-
-}
-
-nav#menu ul{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 20px;
-
-}
-
-nav#menu ul li{
-	margin: 10px 20px 10px 20px;	
-	list-style: none;
-}
-
-nav#menu ul li a {
-	text-decoration: none;
-	color: white;
-	font-size: 15pt;
-}
-
-
-figure#capa{
-	width: auto;
-	height: 400px;
-	/*border: 1
-	box-shadow: 1px 1px 4px;
-	position: relative;
-}
-
-figure#capa img{
-	width: 100%;
-	height: 100%;
-
-}
-
-figure#capa figcaption{
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	background-color: rgba(0, 0, 0, 0.1);/*dar a co
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	transition: opacity 1s;
-}
-
-figure#capa figcaption h3{
-	text-align: left;
-	margin-top: 30px;
-	font-size: 20pt;
-	text-transform: uppercase;
-	font-family: "Arial", sans-serif;
-	color: white;
-}
-
-
-figure#capa figcaption p{
-	text-align: left;
-	margin-top: 40px;
-	font-size: 18pt;
-	font-family: sans-serif;
-	color:  black;
-	font-family: 'Akaya Telivigala', cursive;
-}
-
-figure#capa:hover figcaption{
-	opacity: 1;
-
-}
-
-section#terapia{
-	
-	background-color:#FFE1D2;/*ros
-	max-height: 500px;
-	margin: auto;
-	padding-top: 40px;
-	
-}
-section#terapia div{
-	
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 40px;
-}
-section#terapia figure img{
-	width: 250px;
-	height: 250px;
-
-}
-
-section#terapia figcaption{
-
-	width: 300px;
-	height: 150px;
-	font-family: cursive;
-	font-size: 12pt;
-	overflow:hidden;/*escond
-}
-
-section#terapia figcaption p{
-	text-align: justify;
-
-	margin: 10px 20px 10px 20px;
-}
-
-section#terapia figure img:hover{
-	border: 1px solid #CE6F83;
-	transform: scale(1.2);
-	
-}
-
-
-
-section#servicos{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 30px;
-}
-
-section#servicos div img{
-	width: 400px;
-	height:400px;
-	margin: 10px;
-
-}
-
-section#servicos div#texto{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin:60px;
-	width: 400px;
-	height: 200px;
-	font-family: cursive;
-	font-size: 18pt;
-}
-
-section#servicos div#texto h3{
-	color:#F2BE7E; 
-	padding: 10px;
-}
-
-section#servicos div#texto p{
-	margin-bottom: 20px;
-
-}
-
-section#servicos div#texto button{
-	
-	color:black; 
-	padding: 10px;
-	border-radius: 25px;
-	width:250px;
-	height: 250px;
-	margin:0 auto;
-	background-color:#F2BE7E;
-	font-size: 12pt;
-	font-family: cursive;
-	border-style: none;
-}
-
-section#servicos div#texto button:hover{
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-
-footer{
+	}
 	
 
-	background-color:#F2BE7E; 
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
-
-footer p{
-	margin: 20px;
-	padding: 20px;
-	
-}
-
-
-
-
-
-
-
-
-*/
